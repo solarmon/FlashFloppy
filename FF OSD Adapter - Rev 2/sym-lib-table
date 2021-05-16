@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name FF-OSD-Adapter-rescue)(type Legacy)(uri "${KIPRJMOD}/FF OSD Adapter-rescue.lib")(options "")(descr ""))
+  (lib (name FF-OSD-Adapter---Rev-2-rescue)(type Legacy)(uri "${KIPRJMOD}/FF OSD Adapter - Rev 2-rescue.lib")(options "")(descr ""))
+)
