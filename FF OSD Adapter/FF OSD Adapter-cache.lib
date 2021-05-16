@@ -122,33 +122,11 @@ X ~ 2 0 -100 30 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Jumper_SolderJumper_2_Open
+# FF-OSD-Adapter-rescue_YAAJ_BluePill_Part_Like-YAAJ_BluePill
 #
-DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
-F0 "JP" 0 80 50 H V C CNN
-F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SolderJumper*Open*
-$ENDFPLIST
-DRAW
-A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
-A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
-A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
-A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
-P 2 0 1 0 -10 40 -10 -40 N
-P 2 0 1 0 10 40 10 -40 N
-X A 1 -150 0 100 R 50 50 1 1 P
-X B 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# YAAJ_BluePill_YAAJ_BluePill_Part_Like
-#
-DEF YAAJ_BluePill_YAAJ_BluePill_Part_Like U 0 40 Y Y 1 F N
+DEF FF-OSD-Adapter-rescue_YAAJ_BluePill_Part_Like-YAAJ_BluePill U 0 40 Y Y 1 F N
 F0 "U" -500 1000 50 H V C CNN
-F1 "YAAJ_BluePill_YAAJ_BluePill_Part_Like" 0 100 50 V V C CNN
+F1 "FF-OSD-Adapter-rescue_YAAJ_BluePill_Part_Like-YAAJ_BluePill" 0 100 50 V V C CNN
 F2 "" 700 -1000 50 H I C CNN
 F3 "" 700 -1000 50 H I C CNN
 DRAW
@@ -268,6 +246,28 @@ X PA9 6 -800 400 200 R 50 50 1 1 B
 X PA10 7 -800 300 200 R 50 50 1 1 B
 X PA11 8 -800 200 200 R 50 50 1 1 B
 X PA12 9 -800 100 200 R 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Jumper_SolderJumper_2_Open
+#
+DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
+A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
+A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
+A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
+P 2 0 1 0 -10 40 -10 -40 N
+P 2 0 1 0 10 40 10 -40 N
+X A 1 -150 0 100 R 50 50 1 1 P
+X B 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

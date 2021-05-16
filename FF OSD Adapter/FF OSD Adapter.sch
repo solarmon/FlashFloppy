@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L YAAJ_BluePill:YAAJ_BluePill_Part_Like U1
+L FF-OSD-Adapter-rescue:YAAJ_BluePill_Part_Like-YAAJ_BluePill U1
 U 1 1 605DB144
 P 3775 3175
 F 0 "U1" H 3750 3100 50  0000 C CNN
@@ -131,7 +131,7 @@ F 3 "" H 4775 2475 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4575 2475 4775 2475
+	4575 2475 4725 2475
 $Comp
 L power:+3.3V #PWR0110
 U 1 1 605FB679
@@ -178,9 +178,9 @@ Text GLabel 2975 2675 0    50   Input ~ 0
 C_H_SYNC
 Text GLabel 2975 2475 0    50   Input ~ 0
 V_SYNC
-Text GLabel 4925 3875 3    50   Input ~ 0
+Text GLabel 4975 3875 3    50   Input ~ 0
 A0
-Text GLabel 4925 3575 1    50   Input ~ 0
+Text GLabel 4975 3575 1    50   Input ~ 0
 A1
 Text Notes 2175 6350 0    50   ~ 0
 To RGBtoHDMI
@@ -268,18 +268,14 @@ RX
 $Comp
 L Jumper:SolderJumper_2_Open JP1
 U 1 1 6063571E
-P 4925 3725
-F 0 "JP1" V 4971 3637 50  0000 R CNN
-F 1 "Conn_01x02" V 4880 3637 50  0000 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4925 3725 50  0001 C CNN
-F 3 "~" H 4925 3725 50  0001 C CNN
-	1    4925 3725
+P 4975 3725
+F 0 "JP1" V 5021 3637 50  0000 R CNN
+F 1 "Conn_01x02" V 4930 3637 50  0000 R CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4975 3725 50  0001 C CNN
+F 3 "~" H 4975 3725 50  0001 C CNN
+	1    4975 3725
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4575 3675 4750 3675
-Wire Wire Line
-	4575 3775 4750 3775
 Text GLabel 4125 6400 0    50   Input ~ 0
 DISPLAY_OUTPUT
 Text GLabel 4925 6200 0    50   Input ~ 0
@@ -318,14 +314,6 @@ Wire Wire Line
 	4125 6400 4275 6400
 Wire Wire Line
 	4475 6400 4925 6400
-Wire Wire Line
-	4750 3775 4750 3875
-Wire Wire Line
-	4750 3875 4925 3875
-Wire Wire Line
-	4750 3675 4750 3575
-Wire Wire Line
-	4750 3575 4925 3575
 $Comp
 L power:+5V #PWR0102
 U 1 1 6066C9A3
@@ -416,4 +404,61 @@ Wire Wire Line
 	6325 5600 5975 5600
 Wire Wire Line
 	5975 5600 5975 5350
+NoConn ~ 4575 2575
+NoConn ~ 4575 2675
+NoConn ~ 4575 2775
+NoConn ~ 4575 2875
+NoConn ~ 4575 2975
+NoConn ~ 4575 3075
+NoConn ~ 4575 3175
+NoConn ~ 4575 3275
+NoConn ~ 4575 3375
+NoConn ~ 4575 3475
+NoConn ~ 4575 3575
+NoConn ~ 2975 2975
+NoConn ~ 2975 3075
+NoConn ~ 2975 3475
+NoConn ~ 2975 2275
+NoConn ~ 2975 2375
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 60A140D7
+P 2425 4075
+F 0 "#FLG0102" H 2425 4150 50  0001 C CNN
+F 1 "PWR_FLAG" V 2425 4202 50  0000 L CNN
+F 2 "" H 2425 4075 50  0001 C CNN
+F 3 "~" H 2425 4075 50  0001 C CNN
+	1    2425 4075
+	0    -1   -1   0   
+$EndComp
+Connection ~ 2425 4075
+NoConn ~ 2975 3775
+NoConn ~ 2975 3875
+NoConn ~ 2975 4175
+Text Notes 5025 3525 0    50   ~ 0
+A1
+Text Notes 5025 3975 0    50   ~ 0
+A0
+NoConn ~ 4575 3875
+NoConn ~ 4575 3975
+NoConn ~ 4575 4075
+NoConn ~ 4575 4175
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 60A17962
+P 4725 2475
+F 0 "#FLG0103" H 4725 2550 50  0001 C CNN
+F 1 "PWR_FLAG" V 4725 2602 50  0000 L CNN
+F 2 "" H 4725 2475 50  0001 C CNN
+F 3 "~" H 4725 2475 50  0001 C CNN
+	1    4725 2475
+	-1   0    0    1   
+$EndComp
+Connection ~ 4725 2475
+Wire Wire Line
+	4725 2475 4775 2475
+Text GLabel 4575 3675 2    50   Input ~ 0
+A1
+Text GLabel 4575 3775 2    50   Input ~ 0
+A0
 $EndSCHEMATC
