@@ -78,6 +78,37 @@ X Pin_9 9 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# Connector_Generic_Conn_02x04_Row_Letter_Last
+#
+DEF Connector_Generic_Conn_02x04_Row_Letter_Last J 0 40 Y N 1 F N
+F0 "J" 50 200 50 H V C CNN
+F1 "Connector_Generic_Conn_02x04_Row_Letter_Last" 50 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 150 -250 1 1 10 f
+S 150 -195 100 -205 1 1 6 N
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+X Pin_1a 1a -200 100 150 R 50 50 1 1 P
+X Pin_1b 1b 300 100 150 L 50 50 1 1 P
+X Pin_2a 2a -200 0 150 R 50 50 1 1 P
+X Pin_2b 2b 300 0 150 L 50 50 1 1 P
+X Pin_3a 3a -200 -100 150 R 50 50 1 1 P
+X Pin_3b 3b 300 -100 150 L 50 50 1 1 P
+X Pin_4a 4a -200 -200 150 R 50 50 1 1 P
+X Pin_4b 4b 300 -200 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Device_R_Small
 #
 DEF Device_R_Small R 0 10 N N 1 F N

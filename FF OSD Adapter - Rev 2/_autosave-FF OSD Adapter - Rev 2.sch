@@ -216,32 +216,6 @@ Text GLabel 2625 5775 2    50   Input ~ 0
 DISPLAY_ENABLE
 Text GLabel 2625 5875 2    50   Input ~ 0
 DISPLAY_OUTPUT_BUFFERED
-Text GLabel 4925 5900 0    50   Input ~ 0
-SCL
-Text GLabel 4925 5800 0    50   Input ~ 0
-SDA
-$Comp
-L power:GND #PWR0114
-U 1 1 6061A0AB
-P 4850 5450
-F 0 "#PWR0114" H 4850 5200 50  0001 C CNN
-F 1 "GND" H 4855 5277 50  0000 C CNN
-F 2 "" H 4850 5450 50  0001 C CNN
-F 3 "" H 4850 5450 50  0001 C CNN
-	1    4850 5450
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3.3V #PWR0115
-U 1 1 6061A6F7
-P 4575 5450
-F 0 "#PWR0115" H 4575 5300 50  0001 C CNN
-F 1 "+3.3V" H 4590 5623 50  0000 C CNN
-F 2 "" H 4575 5450 50  0001 C CNN
-F 3 "" H 4575 5450 50  0001 C CNN
-	1    4575 5450
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2975 3675 1850 3675
 Wire Wire Line
@@ -337,28 +311,20 @@ F 3 "" H 2075 7375 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x09 CN2
+L Connector_Generic:Conn_01x05 CN2
 U 1 1 605E5585
-P 5125 6000
-F 0 "CN2" H 5300 5625 50  0000 C CNN
-F 1 "Conn_01x09" H 5425 5725 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Horizontal" H 5125 6000 50  0001 C CNN
-F 3 "~" H 5125 6000 50  0001 C CNN
-	1    5125 6000
+P 5125 6200
+F 0 "CN2" H 5300 5825 50  0000 C CNN
+F 1 "Conn_01x05" H 5425 5925 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Horizontal" H 5125 6200 50  0001 C CNN
+F 3 "~" H 5125 6200 50  0001 C CNN
+	1    5125 6200
 	1    0    0    1   
 $EndComp
 Text GLabel 2975 3275 0    50   Input ~ 0
 KB_DATA
 Text GLabel 2975 3375 0    50   Input ~ 0
 KB_CLOCK
-Wire Wire Line
-	4850 5450 4850 5600
-Wire Wire Line
-	4850 5600 4925 5600
-Wire Wire Line
-	4925 5700 4575 5700
-Wire Wire Line
-	4575 5700 4575 5450
 $Comp
 L Connector_Generic:Conn_01x04 CN4
 U 1 1 6056A77A
@@ -474,14 +440,74 @@ Text GLabel 5250 3500 2    50   Input ~ 0
 A2
 NoConn ~ 5250 3500
 $Comp
-L Connector_Generic:Conn_02x04_Row_Letter_Last CN5
+L Connector_Generic:Conn_02x04_Odd_Even CN5
 U 1 1 60A50932
 P 5125 4925
 F 0 "CN5" H 5175 4500 50  0000 C CNN
 F 1 "Conn_02x04_Row_Letter_First" H 5175 4591 50  0000 C CNN
-F 2 "" H 5125 4925 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Horizontal" H 5125 4925 50  0001 C CNN
 F 3 "~" H 5125 4925 50  0001 C CNN
 	1    5125 4925
 	-1   0    0    1   
 $EndComp
+Text GLabel 5325 4925 2    50   Input ~ 0
+SDA
+Text GLabel 5325 5025 2    50   Input ~ 0
+SCL
+$Comp
+L power:+3.3V #PWR0109
+U 1 1 60A51AC9
+P 5725 4825
+F 0 "#PWR0109" H 5725 4675 50  0001 C CNN
+F 1 "+3.3V" H 5740 4998 50  0000 C CNN
+F 2 "" H 5725 4825 50  0001 C CNN
+F 3 "" H 5725 4825 50  0001 C CNN
+	1    5725 4825
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 60A52A0F
+P 5600 4725
+F 0 "#PWR0113" H 5600 4475 50  0001 C CNN
+F 1 "GND" H 5605 4552 50  0000 C CNN
+F 2 "" H 5600 4725 50  0001 C CNN
+F 3 "" H 5600 4725 50  0001 C CNN
+	1    5600 4725
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5325 4725 5600 4725
+Wire Wire Line
+	5325 4825 5725 4825
+Text GLabel 4825 5025 0    50   Input ~ 0
+SCL
+Text GLabel 4825 4925 0    50   Input ~ 0
+SDA
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 60A54A4F
+P 4225 4825
+F 0 "#PWR0114" H 4225 4675 50  0001 C CNN
+F 1 "+3.3V" H 4240 4998 50  0000 C CNN
+F 2 "" H 4225 4825 50  0001 C CNN
+F 3 "" H 4225 4825 50  0001 C CNN
+	1    4225 4825
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 60A5527D
+P 4400 4725
+F 0 "#PWR0115" H 4400 4475 50  0001 C CNN
+F 1 "GND" H 4405 4552 50  0000 C CNN
+F 2 "" H 4400 4725 50  0001 C CNN
+F 3 "" H 4400 4725 50  0001 C CNN
+	1    4400 4725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4825 4725 4400 4725
+Wire Wire Line
+	4825 4825 4225 4825
 $EndSCHEMATC
