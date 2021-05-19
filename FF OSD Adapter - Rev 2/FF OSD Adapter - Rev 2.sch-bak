@@ -473,4 +473,15 @@ A2
 Text GLabel 5250 3500 2    50   Input ~ 0
 A2
 NoConn ~ 5250 3500
+$Comp
+L Connector_Generic:Conn_02x04_Row_Letter_Last CN5
+U 1 1 60A50932
+P 5125 4925
+F 0 "CN5" H 5175 4500 50  0000 C CNN
+F 1 "Conn_02x04_Row_Letter_First" H 5175 4591 50  0000 C CNN
+F 2 "" H 5125 4925 50  0001 C CNN
+F 3 "~" H 5125 4925 50  0001 C CNN
+	1    5125 4925
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
