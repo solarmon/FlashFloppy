@@ -27,10 +27,10 @@ In order to support keyboard integration for the RGBtoHDMI menu buttons , FF OSD
 
 https://github.com/solarmon/FF_OSD
 
-Use the FF OSD menu to set the option **Display Enable** to **A15** and to set **A15** to **Active Low**.
-
 ## Installation and Connectivity
 
 Here is an example summary installation connectivity with a supported RGBtoHDMI board and Gotek.
 
 ![Bottom](https://github.com/solarmon/FlashFloppy/blob/main/FF%20OSD%20Adapter%20-%20Rev%202/RGBtoHDMI%20FF%20OSD%20Adapter%20Rev%202.png)
+
+For dual output of FF OSD on Amiga RGB and RGBtoHDMI HDMI, use the FF OSD menu to set the option **Display Enable** to **A15** and to set **A15** to **Active Low**.
