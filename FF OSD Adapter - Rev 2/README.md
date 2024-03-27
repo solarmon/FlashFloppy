@@ -27,6 +27,30 @@ In order to support keyboard integration for the RGBtoHDMI menu buttons , FF OSD
 
 https://github.com/solarmon/FF_OSD
 
+The only change is to add the button code to `src/default_config.c`:
+
+```c
+#if 1
+    /* An example for RGBtoHDMI momentary buttons */
+    .user_pin_opendrain = U(2) | U(1) | U(0),	/* Set these pins as open drain */
+    .user_pin_pushpull  = 0,					/* No buttons as pushpull */
+	.user_pin_high		= U(2) | U(1) | U(0),	/* Initialise then as HIGH */
+
+    .hotkey = {
+        [F(1)]  = { .str = "RGBtoHDMI\0Button 1",	/* Test OSD text */
+                    .pin_mod  = U(0), 
+					.flags = HKF_momentary, },
+        [F(2)]  = { .str = "RGBtoHDMI\0Button 2",	/* Test OSD text */
+                    .pin_mod  = U(1), 
+					.flags = HKF_momentary, },
+		[F(3)]  = { .str = "RGBtoHDMI\0Button 3",	/* Test OSD text */
+                    .pin_mod  = U(2), 
+					.flags = HKF_momentary, },
+    }
+#endif
+```
+So you can take the original and latest source code from https://github.com/keirf/flashfloppy-osd and update `src/default_config.c` to include this three button mapping, and build the Blue Pill firmware yourself (see https://github.com/keirf/flashfloppy-osd/wiki/Building-From-Source)
+
 ## Installation and Connectivity
 
 Here is an example summary installation connectivity with a supported RGBtoHDMI board and Gotek.
